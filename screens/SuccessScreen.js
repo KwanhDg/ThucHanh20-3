@@ -11,7 +11,6 @@ const SuccessScreen = ({ navigation, route }) => {
         <Ionicons name="chevron-back" size={24} color="#5A6CF3" />
       </TouchableOpacity>
 
-      {/* Hình ảnh minh họa */}
       <Image
         source={require('../assets/icons/payment_success.png')}
         style={styles.successImage}
@@ -34,7 +33,7 @@ const SuccessScreen = ({ navigation, route }) => {
       </TouchableOpacity>
 
       {/* Nút Download Invoice */}
-      <TouchableOpacity style={styles.downloadButton}>
+      <TouchableOpacity style={styles.downloadButton} onPress={() => navigation.navigate('Tabs', { screen: 'Home' })}>
         <Text style={styles.downloadButtonText}>Download Invoice</Text>
       </TouchableOpacity>
     </View>

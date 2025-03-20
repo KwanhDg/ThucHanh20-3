@@ -287,7 +287,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   logoContainer: {
-    backgroundColor: '#FFF',
     borderRadius: 15,
     padding: 3,
   },
